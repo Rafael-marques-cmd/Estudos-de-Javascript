@@ -21,16 +21,19 @@
         <header>
             <h1>Todo Avançado</h1>
         </header>
-        <form id="todo-form" class="">
+        <form id="todo-form">
            <p>Adicione a sua tarefa:</p>
            <div class="form-control">
-            <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+            <input 
+            type="text" 
+            id="todo-input" 
+            placeholder="O que você vai fazer?">
             <button type="submit">
                 <i class="fa-thin fa-plus"></i>
             </button>
            </div> 
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -38,14 +41,14 @@
                     <i class="fa-solid fa-check-double"></i>
                 </button>
             </div>
-            <button id="cancel-edit-btn">Cancelar</button>
+            <button id="cancel-edit-btn" type="button">Cancelar</button>
         </form>
         <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
-                    <button id="erase-button">
+                    <button id="erase-button" type="button">
                         <i class="fa-delete-left"></i>
                     </button>
                 </form>
@@ -60,7 +63,7 @@
             </div>
         </div>
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estou fazendo alguma coisa...</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
