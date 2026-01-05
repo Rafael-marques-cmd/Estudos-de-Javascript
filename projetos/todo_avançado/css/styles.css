@@ -7,8 +7,12 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
-    background-image: url(../img/image-3.jpg);
+    background-image: url(../img/image-2.jpg);
     background-position: center;
     background-size:cover
 }
